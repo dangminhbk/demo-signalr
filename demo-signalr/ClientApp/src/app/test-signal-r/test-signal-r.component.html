@@ -1,0 +1,11 @@
+<label>Ten</label>
+<input type="text" [(ngModel)]="sender" name="sender" id="sender">
+<label>Tin nhan</label>
+<input type="text" [(ngModel)]="chat" name="message" id="message">
+<button (click)="sendMessage()" type="button" >Gui</button>
+
+<ul>
+    <li *ngFor="let item of chatList;">
+        <div>{{item.sender}} : {{item.message}} </div>
+    </li>
+</ul>
